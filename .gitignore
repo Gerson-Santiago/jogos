@@ -1,6 +1,8 @@
 # Shadow of the Colossus & PCSX2 Gitignore (Gold Standard)
 
-# Ignorar Binários Pesados (ISOs/ROMs/CHD)
+# ---------------------------------------------------------
+# BLOQUEIO GLOBAL (Binários, Temporários e Caches)
+# ---------------------------------------------------------
 *.iso
 *.iso.*
 *.bin
@@ -8,37 +10,84 @@
 *.gz
 *.cso
 *.mdf
+*.tmp
+*.log
+*.bak
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.zip
+*.rar
+*.7z
+*.tar
 
-# Ignorar Dados do Emulador (Dinâmicos/Pesados)
-/pcsx2-userdata/*/sstates/
-/pcsx2-userdata/*/logs/
-/pcsx2-userdata/*/cache/
-/pcsx2-userdata/*/snaps/
-/pcsx2-userdata/*/translations/
-/pcsx2-userdata/*/bios/
+# Pastas de Cache e Texturas (Qualquer profundidade)
+**/Texturas/
+**/textures/
+**/replacements/
+**/previews/
+**/cache/
+**/cache/
+**/vulkan_shaders/
+**/vulkan_pipelines/
 
-# Ignorar Formatos de Save Binários (Memory Cards Legados)
-/pcsx2-userdata/*/memcards/*.ps2
-/pcsx2-userdata/*/memcards/*.psu
-/pcsx2-userdata/*/memcards/*.cbs
-/pcsx2-userdata/*/memcards/*.max
-/pcsx2-userdata/*/memcards/*.bak
-/pcsx2-userdata/*/memcards/*.old
+# ---------------------------------------------------------
+# PASTAS DE SUPORTE E SISTEMA (Ignorar Completamente)
+# ---------------------------------------------------------
+/PS2/
+/lab/
+/flatpak/
+/doc/
+/.agents/
+/lost+found/
+/.Trash-*/
+/ps2_bios/
+/RetroArch/
+/aquiArquivo/
+/resuperandoAmerdaque*/
 
-# Ignorar Arquivos do Sistema Operacional
-.DS_Store
-Thumbs.db
-lost+found/
+# ---------------------------------------------------------
+# DADOS DINÂMICOS DO EMULADOR (PCSX2-Userdata)
+# ---------------------------------------------------------
+# Ignora tudo dentro de pcsx2-userdata por padrão
+pcsx2-userdata/
 
-# Permitir explicitly: Configurações, Cheats e Scripts
+# Exceto a estrutura de pastas que queremos (Whitelisting reverso)
+!pcsx2-userdata/
+!pcsx2-userdata/**/
+
+# Bloqueia pastas específicas de dados pesados
+**/sstates/
+**/logs/
+**/snaps/
+**/translations/
+**/bios/
+**/covers/
+**/patches/
+**/debuggerlayouts/
+**/pulse/
+**/.ld.so/
+**/QtProject.conf
+**/playtime.dat
+
+# ---------------------------------------------------------
+# WHITELIST: CONFIGURAÇÕES E CHEATS (O que queremos rastrear)
+# ---------------------------------------------------------
+# Bloqueia memory cards em formato antigo (.ps2)
+**/memcards/*.ps2
+**/memcards/*.psu
+**/memcards/*.cbs
+**/memcards/*.max
+
+# Permite explicitamente os arquivos de texto e pastas de memcard
 !*.pnach
 !*.sh
 !*.py
 !*.md
 !*.ini
-!/pcsx2-userdata/**/config/**/*.ini
-!/pcsx2-userdata/**/cheats/*.pnach
-!/pcsx2-userdata/**/patches/*.pnach
-
-# Se as memcards forem convertidas para FOLDER, rastrearemos a estrutura interna (pequena)
-!/pcsx2-userdata/**/memcards/*/
+!**/config/**/*.ini
+!**/cheats/*.pnach
+!**/patches/*.pnach
+!**/memcards/*/
+!**/memcards/*/.gitkeep

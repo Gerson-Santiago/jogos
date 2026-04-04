@@ -1,6 +1,6 @@
 gametitle=Shadow of the Colossus PAL-E SCES-53326 0F0C4A9C
 comment=Visual Fixes + Mastercode + Gigante Stamina & Health + Colossus 12 Fix
-author=Antigravity (Gemini)
+author=Gerson Santiago
 
 [MASTERCODE - Obrigatório para esta versão]
 patch=1,EE,90112728,extended,0C044972
