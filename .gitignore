@@ -13,6 +13,7 @@
 *.tmp
 *.log
 *.bak
+*.old
 *.png
 *.jpg
 *.jpeg
@@ -21,16 +22,6 @@
 *.rar
 *.7z
 *.tar
-
-# Pastas de Cache e Texturas (Qualquer profundidade)
-**/Texturas/
-**/textures/
-**/replacements/
-**/previews/
-**/cache/
-**/cache/
-**/vulkan_shaders/
-**/vulkan_pipelines/
 
 # ---------------------------------------------------------
 # PASTAS DE SUPORTE E SISTEMA (Ignorar Completamente)
@@ -57,7 +48,20 @@ pcsx2-userdata/
 !pcsx2-userdata/
 !pcsx2-userdata/**/
 
-# Bloqueia pastas específicas de dados pesados
+# ---------------------------------------------------------
+# BLOQUEIO DE DADOS PESADOS (Exceções ao whitelist acima)
+# ---------------------------------------------------------
+# Pastas de Cache e Texturas
+**/Texturas/
+**/textures/
+**/replacements/
+**/previews/
+**/cache/
+**/vulkan_shaders/
+**/vulkan_pipelines/
+**/BACKUP_SOTC_*/
+
+# Dados Voláteis do Emulador
 **/sstates/
 **/logs/
 **/snaps/
@@ -74,7 +78,7 @@ pcsx2-userdata/
 # ---------------------------------------------------------
 # WHITELIST: CONFIGURAÇÕES E CHEATS (O que queremos rastrear)
 # ---------------------------------------------------------
-# Bloqueia memory cards em formato antigo (.ps2)
+# Bloqueia memory cards em formato antigo (.ps2, .psu, etc)
 **/memcards/*.ps2
 **/memcards/*.psu
 **/memcards/*.cbs
