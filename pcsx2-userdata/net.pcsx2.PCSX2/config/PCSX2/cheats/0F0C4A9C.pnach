@@ -1,0 +1,31 @@
+gametitle=Shadow of the Colossus PAL-E SCES-53326 0F0C4A9C
+comment=Visual Fixes + Mastercode + Gigante Stamina & Health + Colossus 12 Fix
+author=Antigravity (Gemini)
+
+[MASTERCODE - Obrigatório para esta versão]
+patch=1,EE,90112728,extended,0C044972
+
+[STAMINA: Gigante Grip (Barra atravessa a tela)]
+patch=1,EE,212EA020,extended,447A0000
+patch=1,EE,212EA044,extended,447A0000
+
+[HEALTH: Gigante Health (Barra atravessa a tela)]
+patch=1,EE,212EA024,extended,447A0000
+patch=1,EE,212EA048,extended,447A0000
+
+[PROGRESSION: Corrigir Radar para o Colossus 12 (Pelagor)]
+patch=1,EE,2033BF94,word,0000000C
+
+[VISUAL: Progressive Mode Aspect Ratio Fix]
+patch=1,EE,0125BB9C,word,00000000
+patch=1,EE,0125BBD8,word,3C013FA0
+patch=1,EE,0125BC00,word,3C013F70
+
+[VISUAL: Disable Bloom]
+patch=1,EE,01184F88,word,00000000
+
+[VISUAL: Disable DOF]
+patch=1,EE,01184FCC,word,00000000
+
+[VISUAL: Disable Filters]
+patch=1,EE,01185034,word,00000000
