@@ -1,0 +1,44 @@
+# Shadow of the Colossus & PCSX2 Gitignore (Gold Standard)
+
+# Ignorar Binários Pesados (ISOs/ROMs/CHD)
+*.iso
+*.iso.*
+*.bin
+*.chd
+*.gz
+*.cso
+*.mdf
+
+# Ignorar Dados do Emulador (Dinâmicos/Pesados)
+/pcsx2-userdata/*/sstates/
+/pcsx2-userdata/*/logs/
+/pcsx2-userdata/*/cache/
+/pcsx2-userdata/*/snaps/
+/pcsx2-userdata/*/translations/
+/pcsx2-userdata/*/bios/
+
+# Ignorar Formatos de Save Binários (Memory Cards Legados)
+/pcsx2-userdata/*/memcards/*.ps2
+/pcsx2-userdata/*/memcards/*.psu
+/pcsx2-userdata/*/memcards/*.cbs
+/pcsx2-userdata/*/memcards/*.max
+/pcsx2-userdata/*/memcards/*.bak
+/pcsx2-userdata/*/memcards/*.old
+
+# Ignorar Arquivos do Sistema Operacional
+.DS_Store
+Thumbs.db
+lost+found/
+
+# Permitir explicitly: Configurações, Cheats e Scripts
+!*.pnach
+!*.sh
+!*.py
+!*.md
+!*.ini
+!/pcsx2-userdata/**/config/**/*.ini
+!/pcsx2-userdata/**/cheats/*.pnach
+!/pcsx2-userdata/**/patches/*.pnach
+
+# Se as memcards forem convertidas para FOLDER, rastrearemos a estrutura interna (pequena)
+!/pcsx2-userdata/**/memcards/*/
