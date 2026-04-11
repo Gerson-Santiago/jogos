@@ -1,0 +1,196 @@
+## 🖥️ Inventário Completo — TUF Gaming de sant
+
+---
+
+### SISTEMA OPERACIONAL
+```
+Distro:    Debian GNU/Linux 13.4 (trixie) x86_64
+Kernel:    6.12.74+deb13+1-amd64  (ativo)
+Kernel:    6.19.10-1~bpo13+1      (backports — pronto para a RX 9060 XT)
+DE:        GNOME 48.7 / Mutter (Wayland nativo)
+Shell:     bash 5.2.37
+BIOS:      AMI versão 3827 — atualizado em 02/06/2026 ✅ (muito recente!)
+Uptime:    8h23min na coleta
+```
+
+---
+
+### CPU
+```
+Modelo:    AMD Ryzen 5 7600 — Zen 4 / AM5
+Núcleos:   6c / 12 threads
+Clock:     3.8 GHz base → 5.1 GHz turbo
+Cache:     38 MB (L3)
+Temp idle: Tctl +54°C / Tccd1 +46°C  ✅ normal sem GPU dedicada
+TDP:       65W nominal
+```
+
+---
+
+### PLACA-MÃE
+```
+Modelo:    ASUS TUF Gaming B650M-E WIFI
+Chipset:   AMD B650 / Socket AM5 / M-ATX
+PCIe:      5.0 x16 (slot GPU — pronto para RX 9060 XT)
+Rede 1:    Intel Wi-Fi 6E AX210 (802.11ax, BT 5.3) ✅
+Rede 2:    Realtek r8169 — 1 Gbps onboard ✅
+Rede 3:    MediaTek 7902 — ⚠️ segunda interface detectada (M.2?)
+Áudio:     Realtek ALC897 (onboard)
+LED:       ASUS AURA Controller USB ativo
+```
+
+---
+
+### MEMÓRIA RAM
+```
+Config:    2x 8GB = 16GB DDR5 dual channel
+Fabricante: Kingston — KF560C30-8 (Fury Beast)
+EXPO:      ✅ ATIVO — rodando a 6000 MT/s C30
+           (SPD nativo seria 4800 MT/s — EXPO garante os 6000)
+Temp:      +33.5°C / +34°C ✅ excelente
+Uso atual: 5.24 GB / 14.79 GB (35%)
+```
+
+---
+
+### ARMAZENAMENTO
+```
+nvme0n1  → WD Green SN3000 500GB NVMe PCIe 4.0
+           (Sandisk SN5000S — DRAM-less)
+           Leitura 5000 MB/s / Gravação 4100 MB/s
+           Temp: +31.9°C ✅
+           Partições:
+             p1 → EFI (FAT32)
+             p2 → (reservado)
+             p3 → Windows 11 (NTFS)
+             p4 → Windows 11 dados (NTFS)
+             p5 → swap 8GB (prioridade 10)
+
+sda      → WDC WD5000LPCX-2 — 500GB HDD 2.5" laptop
+           ⚠️ CONECTADO VIA USB! (adaptador Initio INIC-1618L SATA→USB)
+           Partições:
+             sda1 → EFI (FAT32)
+             sda2 → Debian /  (~54GB, 67% usado)
+             sda3 → ZorinOS 18 (não montado — abandonado)
+             sda4 → /media/jogos ext4 (~170GB, 62% usado)
+
+cdrom    → DVD RW AD-7930H (drive óptico interno)
+```
+
+> ⚠️ **Observação crítica:** o HDD com o Debian e todos os seus jogos está conectado via **USB 3.0**, não SATA interno. Isso limita a velocidade a ~400–450 MB/s e adiciona latência. Considere mover para a porta SATA interna da placa-mãe quando possível.
+
+---
+
+### GPU (atual)
+```
+Modelo:  AMD Radeon Raphael (iGPU do Ryzen 5 7600)
+PCI:     0b:00.0 — rev c6
+Temp:    +49-50°C idle
+PPT:     ~30W idle
+Clock:   600 MHz idle / 2 GHz pico
+Nota:    apenas 2 CUs — saída de vídeo, sem gaming real
+```
+
+### GPU (futura — aguardando compra)
+```
+Modelo:  Gigabyte RX 9060 XT Gaming OC 16G
+SKU:     GV-R9060XTGAMING OC-16GD
+Arq:     RDNA 4 / Navi 48 / PCIe 5.0
+VRAM:    16 GB GDDR6
+TDP:     160W → fonte 650W aguenta com folga
+Driver:  AMDGPU open source — kernel 6.19 cobre Navi 48 ✅
+```
+
+---
+
+### MONITOR
+```
+Conexão:  DisplayPort 2 (DP-2) — principal
+Resolução: 1920×1080 @ nativo
+Tamanho:  530×300mm → ~24 polegadas
+Modelo:   ⚠️ EDID não retornou nome — rode:
+          sudo get-edid | parse-edid 2>/dev/null
+```
+
+---
+
+### ÁUDIO
+```
+Onboard:  Realtek ALC897 (analógico — card 2)
+HDMI:     3 saídas HDMI via iGPU (card 1)
+Stack:    PipeWire + Helvum (patchbay) instalado ✅
+```
+
+---
+
+### PERIFÉRICOS USB
+```
+Teclado:  China Resource Semico — USB com fio (genérico)
+Mouse:    Xenta 2.4G Wireless (receptor USB)
+Controle: ⚠️ não detectado diretamente — Xenta pode ser o receptor
+          do Xbox ou mouse sem fio
+Webcam?:  IMC Networks Wireless_Device (Bus 001)
+Impressora: Epson EcoTank ET-2850/L4260 ✅
+HDD ext:  Initio INIC-1618L (adaptador USB→SATA do sda)
+BT:       Intel AX210 (Bus 001 Device 006)
+AURA:     ASUS LED Controller (Bus 001 Device 004)
+```
+
+---
+
+### REDE
+```
+WiFi:     Intel AX210 — Wi-Fi 6E 802.11ax, 2x2
+          Bluetooth 5.3 integrado
+Ethernet: Realtek r8169 — 1 Gbps (onboard) — temp +37°C
+Extra:    MediaTek Corp. Device 7902 — ⚠️ identificar uso
+```
+
+---
+
+### SOFTWARE — EMULAÇÃO & JOGOS
+```
+Flatpak (em /media/jogos):
+  PCSX2         v2.6.3          ← PS2 ✅
+  RetroArch     1.22.2          ← multi-sistema ✅
+  Dolphin       2603a           ← GameCube / Wii ✅ (não sabia que tinha!)
+  Mesa          25.3.5          ← drivers gráficos Flatpak
+  Gamepad Mirror 0.3            ← espelhar controles
+
+APT (sistema):
+  Steam         1.0.0.83        ✅
+  Wine          10.0            ✅
+  Waydroid      1.6.2           ← Android no Linux ✅
+
+Emuladores faltando:
+  ❌ RPCS3 — PS3 ainda não instalado
+```
+
+---
+
+### TEMPERATURAS EM IDLE — SAÚDE DO SISTEMA
+```
+CPU (Tctl):    +54°C  ✅ ótimo
+CPU (Tccd1):   +46°C  ✅ ótimo
+iGPU (edge):   +49°C  ✅ normal
+RAM slot A:    +34°C  ✅
+RAM slot B:    +34°C  ✅
+NVMe:          +31°C  ✅ frio
+Ethernet:      +37°C  ✅
+```
+
+---
+
+### ⚠️ DOIS PONTOS QUE MERECEM ATENÇÃO
+
+**1. HDD via USB** — o `sda` (Debian + /media/jogos) está em adaptador USB, não SATA direto. A placa B650M-E tem porta SATA interna livre — migrar o HDD para lá eliminaria latência e melhoraria a responsividade do sistema e da emulação.
+
+**2. Controle Xbox** — o receptor não apareceu explicitamente no lsusb. Rode isso para confirmar:
+```bash
+lsusb | grep -iE "xbox|microsoft|8bitdo|wireless"
+cat /proc/bus/input/devices | grep -A5 -i "xbox\|gamepad\|joystick"
+```
+
+---
+
+Inventário 100% completo. Quer que eu gere um relatório em arquivo ou partimos para o guia de instalação da RX 9060 XT? 🔧

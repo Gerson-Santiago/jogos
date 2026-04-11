@@ -27,9 +27,13 @@
 # PASTAS DE SUPORTE E SISTEMA (Ignorar Completamente)
 # ---------------------------------------------------------
 /PS2/
-/lab/
+/lab/*
+!/lab/README.md
 /flatpak/
-/doc/
+/doc/*
+!/doc/pc/
+!/doc/pc/inventario_sistema.md
+/PS3/
 /.agents/
 /lost+found/
 /.Trash-*/
@@ -96,7 +100,28 @@ pcsx2-userdata/
 !**/memcards/*/
 !**/memcards/*/.gitkeep
 # ---------------------------------------------------------
-# RPCS3
+# RPCS3 & Firmware
 # ---------------------------------------------------------
 /rpcs3/
 /PS3/
+
+# Sony firmware — proprietário
+*.PUP
+*.pup
+PS3UPDAT*
+
+# AppImages — binários grandes
+*.AppImage
+*.AppImage_old
+
+# ---------------------------------------------------------
+# SteamLibrary
+# ---------------------------------------------------------
+
+/SteamLibrary/*
+/SteamLibrary/steamapps/*
+/SteamLibrary/steamapps/common/*
+/SteamLibrary/steamapps/compatdata/*
+/SteamLibrary/steamapps/downloading/*
+/SteamLibrary/steamapps/shadercache/*
+/SteamLibrary/steamapps/workshop/*
