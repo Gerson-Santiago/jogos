@@ -1,32 +1,32 @@
 Player 1 Input:
-  Handler: Evdev
-  Device: AT-9078
+  Handler: DualShock 4
+  Device: "DS4 Pad #1"
   Config:
-    Left Stick Left: LX-
-    Left Stick Down: LY+
-    Left Stick Right: LX+
-    Left Stick Up: LY-
-    Right Stick Left: RX-
-    Right Stick Down: RY+
-    Right Stick Right: RX+
-    Right Stick Up: RY-
-    Start: Start
-    Select: Select
-    PS Button: "Mode,Select&Start"
-    Square: X
-    Cross: A
-    Circle: B
-    Triangle: Y
-    Left: Hat0 X-
-    Down: Hat0 Y+
-    Right: Hat0 X+
-    Up: Hat0 Y-
-    R1: TR
-    R2: RZ+
-    R3: Thumb R
-    L1: TL
-    L2: LZ+
-    L3: Thumb L
+    Left Stick Left: LS X-
+    Left Stick Down: LS Y-
+    Left Stick Right: LS X+
+    Left Stick Up: LS Y+
+    Right Stick Left: RS X-
+    Right Stick Down: RS Y-
+    Right Stick Right: RS X+
+    Right Stick Up: RS Y+
+    Start: Options
+    Select: Share
+    PS Button: "Options&Share,PS Button"
+    Square: Square
+    Cross: Cross
+    Circle: Circle
+    Triangle: Triangle
+    Left: Left
+    Down: Down
+    Right: Right
+    Up: Up
+    R1: R1
+    R2: R2
+    R3: R3
+    L1: L1
+    L2: L2
+    L3: L3
     IR Nose: ""
     IR Tail: ""
     IR Left: ""
@@ -59,10 +59,10 @@ Player 1 Input:
     Analog Limiter Toggle Mode: false
     Left Stick Multiplier: 100
     Right Stick Multiplier: 100
-    Left Stick Deadzone: 8000
-    Right Stick Deadzone: 8000
-    Left Stick Anti-Deadzone: 4259
-    Right Stick Anti-Deadzone: 4259
+    Left Stick Deadzone: 40
+    Right Stick Deadzone: 40
+    Left Stick Anti-Deadzone: 33
+    Right Stick Anti-Deadzone: 33
     Left Trigger Threshold: 0
     Right Trigger Threshold: 0
     Left Pad Squircling Factor: 4000
@@ -88,8 +88,8 @@ Player 1 Input:
     Analog Button Lerp Factor: 100
     Trigger Lerp Factor: 100
     Device Class Type: 0
-    Vendor ID: 6473
-    Product ID: 1026
+    Vendor ID: 1356
+    Product ID: 616
   Buddy Device: ""
 Player 2 Input:
   Handler: "Null"

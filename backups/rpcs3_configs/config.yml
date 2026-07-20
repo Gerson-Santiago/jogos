@@ -46,13 +46,13 @@ Core:
   PPU Calling History: false
   PPU Debug: false
   PPU Decoder: Recompiler (LLVM)
-  PPU Fixup Vector NaN Values: false
   PPU LLVM Greedy Mode: false
   PPU LLVM Java Mode Handling: true
   PPU Profiler: false
   PPU Set FPCC Bits: false
   PPU Set Saturation Bit: false
   PPU Threads: 2
+  PPU Vector NaN Handling: true
   Performance Report Threshold: 500
   Precise SPU Verification: false
   Preferred SPU Threads: 0
@@ -151,7 +151,7 @@ Savestate:
   Start Paused: false
   Suspend Emulation Savestate Mode: false
 System:
-  Console PSID: 0x6381637F23D8BFAAEC8400C16CD9FBF2
+  Console PSID: 0x617B1A832DDAE3B138A6FB6BDE88A6E6
   Console time offset (s): 0
   Date Format: ddmmyyyy
   Enter button assignment: Enter with cross
@@ -162,7 +162,7 @@ System:
   License Area: SCEA
   Process ARGV:
     {}
-  System Name: RPCS3-916
+  System Name: RPCS3-991
   Time Format: clock24
 VFS:
   Disk cache maximum size (MB): 5120
@@ -235,7 +235,7 @@ Video:
   Relaxed ZCULL Sync: false
   Renderdoc Compatibility Mode: false
   Renderer: Vulkan
-  Resolution: 1920x1080
+  Resolution: 1280x720
   Resolution Scale: 100
   Second Frame Limit: 0
   Shader Compiler Threads: 0
