@@ -82,11 +82,17 @@ pcsx2-userdata/
 # ---------------------------------------------------------
 # WHITELIST: CONFIGURAÇÕES E CHEATS (O que queremos rastrear)
 # ---------------------------------------------------------
-# Bloqueia memory cards em formato antigo (.ps2, .psu, etc)
+# Bloqueia memory cards em formato antigo (.ps2, .psu, etc) — em qualquer pasta
+*.ps2
+*.psu
+*.cbs
+*.max
 **/memcards/*.ps2
 **/memcards/*.psu
 **/memcards/*.cbs
 **/memcards/*.max
+# Saves de backup — ficam no disco, não no git
+backups/saves_*/
 
 # Permite explicitamente os arquivos de texto e pastas de memcard
 !*.pnach
