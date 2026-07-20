@@ -34,12 +34,12 @@ from typing import Optional, Tuple
 # ─────────────────────────────────────────────────────────────────────────────
 
 CONFIG = {
-    "LAB_DIR": "/media/jogos/lab",
-    "LOG_DIR": "/media/jogos/doc/debugMemoryCard12-13",
-    "SOURCE_MC": "/media/jogos/lab/final_test.ps2",
-    "TARGET_MC": "/media/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/memcards/Mcd002.ps2",
-    "BACKUP_DIR": "/media/jogos/pcsx2-userdata/BACKUP_SOTC_20260404_095412/memcards",
-    "PNACH_FILE": "/media/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/cheats/SCES-53326_0F0C4A9C.pnach",
+    "LAB_DIR": "/mnt/jogos/lab",
+    "LOG_DIR": "/mnt/jogos/doc/debugMemoryCard12-13",
+    "SOURCE_MC": "/mnt/jogos/lab/final_test.ps2",
+    "TARGET_MC": "/mnt/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/memcards/Mcd002.ps2",
+    "BACKUP_DIR": "/mnt/jogos/pcsx2-userdata/BACKUP_SOTC_20260404_095412/memcards",
+    "PNACH_FILE": "/mnt/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/cheats/SCES-53326_0F0C4A9C.pnach",
     "NTSC_ID": "BASCUS-97472nico",
     "PAL_ID": "BESCES-53326nico",
     "MD5_MCD001_REF": "a59ea74e996438a65c1a6696feced542",

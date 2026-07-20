@@ -13,9 +13,9 @@ MAGENTA='\033[0;35m'
 RESET='\033[0m'
 
 # Caminhos importantes
-DIRETORIO_ISOS="/media/jogos/PS2/ISOs"
-CACHE_PCSX2="/media/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/cache/gamelist.cache"
-LOG_PCSX2="/media/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/logs/emulog.txt"
+DIRETORIO_ISOS="/mnt/jogos/PS2/ISOs"
+CACHE_PCSX2="/mnt/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/cache/gamelist.cache"
+LOG_PCSX2="/mnt/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/logs/emulog.txt"
 
 clear
 echo -e "${AZUL}==============================================================================${RESET}"

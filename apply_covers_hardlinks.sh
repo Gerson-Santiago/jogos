@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CAPAS_DIR="/media/jogos/PS2/Capas"
+CAPAS_DIR="/mnt/jogos/PS2/Capas"
 COVERS_DIR="$HOME/.var/app/net.pcsx2.PCSX2/config/PCSX2/covers"
 
 echo "🧹 1. Limpando atalhos simbólicos que não funcionam no Flatpak..."

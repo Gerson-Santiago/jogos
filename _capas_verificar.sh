@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Diretórios e arquivos
-CACHE_FILE="/media/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/cache/gamelist.cache"
-COVERS_DIR="/media/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/covers"
-CAPAS_DIR="/media/jogos/PS2/Capas"
+CACHE_FILE="/mnt/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/cache/gamelist.cache"
+COVERS_DIR="/mnt/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/covers"
+CAPAS_DIR="/mnt/jogos/PS2/Capas"
 
 echo "============================================================"
 echo "🎮 Auditoria Profunda de Capas do PCSX2"

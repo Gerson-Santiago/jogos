@@ -12,12 +12,12 @@
 set -euo pipefail
 
 # --- CONFIGURAÇÃO DE PATHS ---
-LAB_DIR="/media/jogos/lab"
-LOG_DIR="/media/jogos/doc/debugMemoryCard12-13"
+LAB_DIR="/mnt/jogos/lab"
+LOG_DIR="/mnt/jogos/doc/debugMemoryCard12-13"
 SOURCE_MC="${LAB_DIR}/final_test.ps2"
-TARGET_MC="/media/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/memcards/Mcd002.ps2"
-BACKUP_DIR="/media/jogos/pcsx2-userdata/BACKUP_SOTC_20260404_095412/memcards"
-PNACH_FILE="/media/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/cheats/SCES-53326_0F0C4A9C.pnach"
+TARGET_MC="/mnt/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/memcards/Mcd002.ps2"
+BACKUP_DIR="/mnt/jogos/pcsx2-userdata/BACKUP_SOTC_20260404_095412/memcards"
+PNACH_FILE="/mnt/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/cheats/SCES-53326_0F0C4A9C.pnach"
 MYMC="/tmp/mymc-env/bin/python3 -m mymcplusplus"
 
 NTSC_DIR="BASCUS-97472nico"

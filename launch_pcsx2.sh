@@ -3,7 +3,7 @@
 # Garante permissões de escrita e abre o emulador via Flatpak
 
 # Caminho para os dados (ajuste se necessário)
-DATA_PATH="/media/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/"
+DATA_PATH="/mnt/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/"
 
 echo "--- Iniciando PCSX2 Gold Standard ---"
 

@@ -8,9 +8,9 @@ AZUL='\033[0;34m'
 NC='\033[0m'
 
 # Caminhos importantes
-INI_FILE="/media/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/inis/PCSX2.ini"
-DIR_TEXTURAS_DISPONIVEIS="/media/jogos/PS2/Texturas"
-DIR_TEXTURAS_PCSX2="/media/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/textures"
+INI_FILE="/mnt/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/inis/PCSX2.ini"
+DIR_TEXTURAS_DISPONIVEIS="/mnt/jogos/PS2/Texturas"
+DIR_TEXTURAS_PCSX2="/mnt/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/textures"
 
 echo -e "${AZUL}============================================${NC}"
 echo -e "${AZUL}      VERIFICADOR DE TEXTURAS - PCSX2       ${NC}"
@@ -87,7 +87,7 @@ echo ""
 
 # 4. VERIFICAÇÃO DE EXECUÇÃO REAL (LOG DO EMULADOR)
 echo -e "4. Verificação Prática no Emulador (Log de Execução):"
-LOG_FILE="/media/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/logs/emulog.txt"
+LOG_FILE="/mnt/jogos/pcsx2-userdata/net.pcsx2.PCSX2/config/PCSX2/logs/emulog.txt"
 if [ -f "$LOG_FILE" ]; then
     # Busca no log se o emulador registrou algum evento de textura
     LOG_TEXTURA=$(grep -iE "replacement texture|custom textures" "$LOG_FILE" | tail -n 1)

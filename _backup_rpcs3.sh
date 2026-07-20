@@ -3,7 +3,7 @@
 echo "Fazendo backup da arquitetura Gold do RPCS3..."
 
 # Definindo diretórios
-BACKUP_DIR="/media/jogos/backups/rpcs3_configs"
+BACKUP_DIR="/mnt/jogos/backups/rpcs3_configs"
 RPCS3_CONF_DIR="$HOME/.config/rpcs3"
 
 # Criando estrutura se não existir
@@ -18,7 +18,7 @@ cp "$RPCS3_CONF_DIR/GuiConfigs/CurrentSettings.ini" "$BACKUP_DIR/GuiConfigs/"
 
 echo "Arquivos copiados com sucesso! Fazendo commit no Git..."
 
-cd /media/jogos || exit
+cd /mnt/jogos || exit
 git add "$BACKUP_DIR"
 git commit -m "Auto-Backup: Atualizacao dos perfis Gold do RPCS3 (Controles e Configuracoes)"
 git push
