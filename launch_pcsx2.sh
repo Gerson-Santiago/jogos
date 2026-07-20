@@ -14,7 +14,8 @@ find "$DATA_PATH" -type f -exec chmod 644 {} +
 
 # Garante que as pastas de saves (se convertidas para folder) tenham escrita
 if [ -d "$DATA_PATH/memcards" ]; then
-    chmod -R 777 "$DATA_PATH/memcards"
+    find "$DATA_PATH/memcards" -type d -exec chmod 755 {} +
+    find "$DATA_PATH/memcards" -type f -not -name ".gitkeep" -exec chmod 664 {} +
 fi
 
 echo "Abrindo PCSX2 via Flatpak..."
