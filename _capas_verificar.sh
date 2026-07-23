@@ -69,7 +69,7 @@ while IFS='|' read -r serial nome_jogo; do
     fi
 
 done < <(strings "$CACHE_FILE" | awk '
-/^\/media\/jogos\/PS2\/ISOs\// {
+/^\/mnt\/jogos\/PS2\/ISOs\// {
     path = $0
     # Pegar linha do serial
     getline
