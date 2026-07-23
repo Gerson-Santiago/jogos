@@ -1,0 +1,58 @@
+{
+  // ============================================================
+  // Exclusões de Busca — evita varredura de ISOs e arquivos pesados
+  // Aplicado a: VS Code, Antigravity IDE e qualquer editor baseado em VS Code
+  // ============================================================
+
+  // Oculta do explorador de arquivos do editor
+  "files.exclude": {
+    "**/*.iso": true,
+    "**/*.chd": true,
+    "**/*.bin": true,
+    "**/*.img": true,
+    "**/*.pup": true,
+    "**/*.zip": true,
+    "**/*.rar": true,
+    "**/*.7z": true,
+    "**/lost+found": true
+  },
+
+  // Exclui da busca por texto (Ctrl+Shift+F) e da indexação pelo ripgrep
+  "search.exclude": {
+    "**/PS2/ISOs/**": true,
+    "**/PS3/ISOs/**": true,
+    "**/ps2_bios/**": true,
+    "**/SteamLibrary/**": true,
+    "**/RetroArch/**": true,
+    "**/pcsx2-userdata/**/cache/**": true,
+    "**/pcsx2-userdata/**/sstates/**": true,
+    "**/pcsx2-userdata/**/snaps/**": true,
+    "**/pcsx2-userdata/**/textures/**": true,
+    "**/rpcs3/data/dev_hdd0/game/**": true,
+    "**/rpcs3/data/dev_hdd0/home/**": true,
+    "**/flatpak/**": true,
+    "**/*.iso": true,
+    "**/*.chd": true,
+    "**/*.bin": true,
+    "**/*.img": true,
+    "**/*.pup": true,
+    "**/*.zip": true,
+    "**/*.rar": true,
+    "**/*.7z": true
+  },
+
+  // Exclui do monitoramento de mudanças de arquivo (fs watcher)
+  // Reduz uso de CPU e inotify watches
+  "files.watcherExclude": {
+    "**/PS2/ISOs/**": true,
+    "**/PS3/ISOs/**": true,
+    "**/ps2_bios/**": true,
+    "**/SteamLibrary/**": true,
+    "**/RetroArch/**": true,
+    "**/pcsx2-userdata/**": true,
+    "**/rpcs3/data/**": true,
+    "**/flatpak/**": true,
+    "**/*.iso": true,
+    "**/*.chd": true
+  }
+}
